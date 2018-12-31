@@ -26,7 +26,8 @@ loop ldr r3, [r1]               // load data in r3 and r4
      ldr r4, [r2]
      cmp r3, r4
      
-     blo cont
+     blo cont                 //for ascending
+     bhs cont                 // for descending
      str r3,[r2]
      str r4,[r1]
      mov r12,#1
