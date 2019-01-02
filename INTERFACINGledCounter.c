@@ -46,11 +46,11 @@ main()
                 led_val = index;
 
                 //Start moving LED
-                 g_pGPIO0->IOSET =led_val;
+                 g_pGPIO0->IO0SET =led_val;
 		//Software Delay from 1 to 50,000
 		Delay(200000);
 		//Turn LED's OFF
-                g_pGPIO0->IOCLR=0xFFFFFFFF;
+                g_pGPIO0->IO0CLR=0xFFFFFFFF;
 		index++;
 	}     
 
