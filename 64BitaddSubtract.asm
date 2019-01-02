@@ -15,7 +15,7 @@ main
         ;r7,r6 and r5 are the sum 
 ;subtraction 
         subs r8,r3,r1
-        subcs r9,r4,r2
+        sbc r9,r4,r2
         subcc r10,r10,#1
 stop    b stop 
         end
